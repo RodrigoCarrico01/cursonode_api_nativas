@@ -11,4 +11,4 @@ fs.readdir(__dirname, (err, data)=>{
 
 
 // readdir vai 1º ler o nosso diretório e vai chamar uma função callback.
-// readdir sync é a versão bloqueante (blocking)
+// readdir sync é a versão bloqueante (blocking) ou seja ele executa sem deixar outras coisas acontecerem 
