@@ -13,3 +13,7 @@ const server = http.createServer((req,res)=>{
 server.listen(port, hostname, ()=>{
     console.log(`Servidor Aberto em ${url}`)
 })
+
+const open = (process.platform == 'darwin'? 'open' : process.platform == 'win32'? 'start': 'xdg-open');
+
+require('child_process').exec(open + ' ' + url);
